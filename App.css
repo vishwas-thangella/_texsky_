@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Anek+Bangla:wght@100..800&display=swap');
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.aldrich {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navtitle {
+    font-size: 36px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.anek-bangla-700 {
+    font-family: "Anek Bangla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.akshar {
+    font-family: "Akshar", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style:normal;
+}
+
+.sidebar{
+    left: -200px;
+    transition: 1s all ease-in-out;
+}

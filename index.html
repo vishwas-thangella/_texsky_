@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./App.css">
+    <link rel="shortcut icon" href="./Assets/logos/logo.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    height: {
+                        nav: '85px'
+                    },
+                    colors: {
+                        nav: 'rgb(21,20,20)',
+                        base_blue: '#87DDFD',
+                        base_gray: '#8E8E8E'
+                    },
+                    width: {
+                        "500": "500px"
+                    },
+                    fontSize: {
+                        base_main: "48px",
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Texsky</title>
+</head>
+
+<body>
+    <nav class="w-full md:h-nav h-16 bg-nav flex flex-row items-center md:pl-16 p-5 justify-between" data-aos="fade-in">
+        <span class="material-symbols-outlined md:hidden text-4xl text-white" onclick="SidebarOpen()">
+            menu
+        </span>
+        <h1 class="aldrich text-white md:navtitle text-3xl">TEXSKY</h1>
+        <div class="md:flex flex-row items-center gap-7 md:pr-10 hidden">
+            <h1 class="aldrich text-white hidden xl:block">Home</h1>
+            <a href="#about">
+                <h1 class="aldrich text-white hidden md:block">About us</h1>
+            </a>
+            <h1 class="aldrich text-white hidden md:block">Services</h1>
+            <h1 class="aldrich text-white hidden md:block">Technologies</h1>
+            <h1 class="aldrich text-white hidden xl:block">Products</h1>
+            <button
+                class="aldrich text-white border bg-nav border-white rounded-xl p-4 hover:text-black hover:bg-white transition-all hidden md:block">Get
+                Quote</button>
+        </div>
+    </nav>
+    <div class="sidebar w-[200px] fixed top-0 z-20 bg-black h-full p-2 pl-2 flex flex-col gap-5" id="sidebar">
+        <h1 class="text-right" onclick="SidebarClose()"><span
+                class="material-symbols-outlined text-white font-bold text-4xl cursor-pointer">close</span></h1>
+        <div class="flex flex-row items-center gap-2">
+            <span class="material-symbols-outlined text-white text-3xl">home</span>
+            <h1 class="text-base_gray text-xl">Home</h1>
+        </div>
+        <div class="flex flex-row items-center gap-2">
+            <span class="material-symbols-outlined text-white text-3xl">info</span>
+            <h1 class="text-base_gray text-xl">About us</h1>
+        </div>
+        <div class="flex flex-row items-center gap-2">
+            <span class="material-symbols-outlined text-white text-3xl">integration_instructions</span>
+            <h1 class="text-base_gray text-xl">Services</h1>
+        </div>
+        <div class="flex flex-row items-center gap-2">
+            <span class="material-symbols-outlined text-white text-3xl">code</span>
+            <h1 class="text-base_gray text-xl">Technologies</h1>
+        </div>
+        <div class="flex flex-row items-center gap-2">
+            <span class="material-symbols-outlined text-white text-3xl">inventory_2</span>
+            <h1 class="text-base_gray text-xl">Products</h1>
+        </div>
+    </div>
+
+    <div class="p-10">
+        <div class="md:grid flex flex-col md:grid-cols-2 place-items-center md:mt-10">
+            <div data-aos="fade-right">
+                <h1 class="aldrich text-white text-4xl md:text-6xl"><span class="text-base_blue">Custom</span>
+                    Development
+                    <br> and Consulting Services
+                </h1>
+                <p class="aldrich text-base_gray leading-10 mt-3" style="font-size: 20px;">At <span
+                        class="text-white">Texsky</span>, we specialize in crafting high-quality web and mobile
+                    applications
+                    that drive innovation and efficiency. Our team of skilled developers and designers work seamlessly
+                    to
+                    deliver cutting-edge solutions tailored to your unique business needs. We pride ourselves on our
+                    ability
+                    to merge creativity with technical expertise, ensuring that each project is completed with precision
+                    and
+                    speed. From concept to launch, we're dedicated to helping your business succeed in the digital
+                    landscape.</p>
+            </div>
+            <div data-aos="fade-left">
+                <img src="./Assets/software-engineer 1.png" alt="" class="w-500">
+            </div>
+        </div>
+        <div class="mt-10" data-aos="fade-up" id="about">
+            <h1 class="text-white anek-bangla-700">ABOUT US</h1>
+            <p class=" text-base_gray mt-2 aldrich leading-7">As a best Agency, we believe that every project is a
+                unique
+                opportunity to push the boundaries of what’s possible. Our passionate team combines technical expertise
+                with
+                creative insight to craft tailored solutions that not only meet your needs but exceed your
+                expectations.We’re a dynamic team of tech enthusiasts and creative problem-solvers dedicated to bringing
+                your digital vision to life. Specializing in website development, mobile app creation, desktop software
+                solutions, and more, we harness the latest technologies to deliver outstanding results.</p>
+        </div>
+        <div class="mt-10">
+            <h1 class="aldrich text-3xl text-white">Services We Provide</h1>
+            <div class="md:flex-row md:justify-between flex flex-col-reverse place-items-center">
+                <div class="grid lg:grid-cols-2 gap-4">
+                    <div style="width: 342px;height: 182px;" class="border border-base_gray flex p-3 gap-4"
+                        data-aos="zoom-in">
+                        <img src="./Assets/logos/1.png" alt="" style="width: 84px; height: 84px;">
+                        <div class="flex flex-col gap-3">
+                            <h1 class="aldrich text-white" style="font-size: 18px;">WEB DEVELOPMENT</h1>
+                            <p class="akshar text-base_gray" style="font-size: 15px;">we specialize in creating dynamic,
+                                responsive, and visually engaging websites.</p>
+                            <button class="text-white text-right">GET QUOTE -></button>
+                        </div>
+                    </div>
+                    <div style="width: 342px;height: 182px;" class="border border-base_blue flex p-3 gap-4"
+                        data-aos="zoom-in">
+                        <img src="./Assets/logos/2.png" alt="" style="width: 84px; height: 84px;">
+                        <div class="flex flex-col gap-3">
+                            <h1 class="aldrich text-white" style="font-size: 18px;">APP DEVELOPMENT</h1>
+                            <p class="akshar text-base_gray" style="font-size: 15px;">We create innovative and
+                                user-centric
+                                mobile applications for iOS, Android, and cross-platform apps.</p>
+                            <button class="text-white text-right">GET QUOTE -></button>
+                        </div>
+                    </div>
+                    <div style="width: 342px;height: 182px;" class="border border-base_blue flex p-3 gap-4"
+                        data-aos="zoom-in">
+                        <img src="./Assets/logos/3.png" alt="" style="width: 84px; height: 84px;">
+                        <div class="flex flex-col gap-3">
+                            <h1 class="aldrich text-white" style="font-size: 18px;">DESKTOP APPS</h1>
+                            <p class="akshar text-base_gray" style="font-size: 15px;">We develop robust, custom desktop
+                                applications for Windows, macOS, and Linux.</p>
+                            <button class="text-white text-right">GET QUOTE -></button>
+                        </div>
+                    </div>
+                    <div style="width: 342px;height: 182px;" class="border border-base_gray flex p-3 gap-4"
+                        data-aos="zoom-in">
+                        <img src="./Assets/logos/4.png" alt="" style="width: 84px; height: 84px;">
+                        <div class="flex flex-col gap-3">
+                            <h1 class="aldrich text-white" style="font-size: 18px;">DIGITAL MARKETING</h1>
+                            <p class="akshar text-base_gray" style="font-size: 15px;">We help businesses grow online
+                                with
+                                tailored digital marketing strategies, including SEO, social media management.</p>
+                            <button class="text-white text-right">GET QUOTE -></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-hidden" data-aos="fade-right">
+                    <img src="./Assets/2.png" alt="" class="w-[500px]">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-10 bg-white w-full pt-10">
+        <h1 class="aldrich text-2xl text-black text-center uppercase" data-aos="zoom-in">Tehcnologies We Use</h1>
+        <div class="md:flex-row md:justify-between grid lg:grid-cols-2 text-black place-items-center">
+            <div class="overflow-hidden flex flex-row justify-center mt-5 md:mt-0" data-aos="zoom-out">
+                <img src="./Assets/logos/side2.png" alt="" class="w-1/2">
+            </div>
+            <div>
+                <div class="grid md:grid-cols-5 grid-cols-2 mt-5 md:mt-0 p-5 gap-4 aldrich text-white"
+                    data-aos="zoom-in">
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/next.png" width="40px" height="40px" alt="">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">Next js</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/ang.png" alt="" width="40px" height="40px">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">Angular</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/react.png" alt="" width="40px" height="40px">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">React</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/node.png" alt="" width="40px" height="40px">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">Node js</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/express.png" alt="" width="40px" height="40px">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">Express</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/django.png" alt="" width="40px" height="40px"
+                            class="rounded-full">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">Django</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/flask.png" alt="" width="40px" height="40px">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">Flask</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/flutter.png" alt="" width="40px" height="40px">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">Flutter</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center">
+                        <img src="./Assets/logos/mongo.png" alt="" width="40px" height="40px">
+                        <h2 class="text-black aldrich" style="font-size: 13px;">MongoDB</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/mysql.png" alt="" width="40px" height="40px">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">My Sql</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/react-native.png" width="40px" height="40px" alt="">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">R-Native</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/nestjs.png" alt="" width="40px" height="40px">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">NestJs</h2>
+                    </div>
+                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                        <img src="./Assets/logos/wordpress.png" alt="" width="40px" height="40px">
+                        <h2 class="text-black aldrich" style="font-size: 15px;">Word press</h2>
+                    </div>
+                </div>
+                <div class="pt-5">
+                    <p class="p-4 text-2xl aldrich" data-aos="zoom-in">Our Developers Have a Strong Grip on
+                        Advanced Technologies to Enhance
+                        Your Website & App.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work with us -->
+    <div class="p-10">
+        <div class="headings text-center aldrich text-white" data-aos="fade-up">
+            <h1 class="pb-5 pt-10 text-2xl">Work With Us</h1>
+            <p>We Create Outstanding Websites & Mobile Apps for Your New Bussiness</p>
+            <p class="md:p-10 text-base_gray mt-5 mb-5 t">At TEXSKY, we specialize in creating web, mobile, and desktop
+                applications that
+                not only meet but exceed your expectations. Here’s why partnering with us is the best choice for your
+                business</p>
+        </div>
+        <div class="text-white aldrich text-md grid md:grid-cols-3 gap-5 md:pl-20 pr-20" data-aos="fade-right">
+            <div class=" border-l-2 border-base_blue mb-2 flex flex-col justify-center pl-5" data-aos="fade-right">
+                <h1 class="text-xl">Comprehensive Solutions</h1>
+                <p class="text-md text-base_gray">Whether you need a sleek website, a robust mobile app, a powerful
+                    desktop
+                    application, or effective digital marketing, we’ve got you covered. Our all-in-one service offering
+                    ensures seamless integration across all platforms.</p>
+            </div>
+            <div class=" border-l-2 border-base_blue mb-2 pl-5" data-aos="fade-right">
+                <h1 class="text-xl">Innovation and Expertise</h1>
+                <p class="text-md text-base_gray">Our team stays ahead of the curve by leveraging the latest
+                    technologies and trends. We bring creativity and technical excellence to every project, ensuring
+                    your solutions are future-ready.</p>
+            </div>
+            <div class=" border-l-2 border-base_blue mb-2 flex flex-col justify-center pl-5" data-aos="fade-right">
+                <h1 class="text-xl">Client-Focused Approach</h1>
+                <p class="text-md text-base_gray">Your vision drives our process. We work closely with you to understand
+                    your unique needs and goals, delivering customized solutions that truly reflect your brand and
+                    objectives.</p>
+            </div>
+            <div class=" border-l-2 border-base_blue mb-2 flex flex-col justify-center pl-5" data-aos="fade-right">
+                <h1 class="text-xl">Proven Success</h1>
+                <p class="text-md text-base_gray">With a portfolio of successful projects across various industries, our
+                    experience speaks for itself. We have a track record of delivering high-quality, impactful solutions
+                    that help businesses thrive.</p>
+            </div>
+            <div class=" border-l-2 border-base_blue mb-2 flex flex-col justify-center pl-5" data-aos="fade-right">
+                <h1 class="text-xl">Ongoing Support</h1>
+                <p class="text-md text-base_gray">Our commitment to your success doesn’t end with project delivery. We
+                    provide continuous support and maintenance, ensuring your applications remain up-to-date and
+                    effective.</p>
+            </div>
+            <div class=" border-l-2 border-base_blue mb-2 flex flex-col justify-center pl-5" data-aos="fade-right">
+                <h1 class="text-xl">Digital Growth</h1>
+                <p class="text-md text-base_gray">Beyond development, our digital marketing services ensure your product
+                    reaches the right audience and achieves the visibility it deserves. We turn your digital presence
+                    into a growth engine.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Development process -->
+
+    <div class="bg-white p-10">
+        <h1 class="md:text-2xl aldrich text-center uppercase text-xl" data-aos="fade-up">Our Development Process</h1>
+        <div class="grid md:grid-cols-3 place-items-center gap-4 mt-10" data-aos="zoom-in">
+            <div class="flex gap-3">
+                <img src="./Assets/idea.png" alt="" class="w-20 h-20">
+                <div>
+                    <h1 class="font-bold aldrich">1. Discovery & Planning</h1>
+                    <p class="text-base_gray text-[14px]">We start by getting to know your business, your goals, and
+                        your
+                        target audience. This helps us create a project plan that aligns with your vision.</p>
+                </div>
+            </div>
+            <div class="flex gap-3">
+                <img src="./Assets/logo-design 1.png" alt="" class="w-20 h-20">
+                <div>
+                    <h1 class="font-bold aldrich">2. Design & Prototyping</h1>
+                    <p class="text-base_gray text-[14px]">Our design team creates intuitive, visually appealing
+                        interfaces
+                        that prioritize user experience. We focus on making your product both functional and engaging.
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-3">
+                <img src="./Assets/setting (3).png" alt="" class="w-20 h-20">
+                <div>
+                    <h1 class="font-bold aldrich">3. Development</h1>
+                    <p class="text-base_gray text-[14px]">We start by getting to know your business, your goals, and
+                        your
+                        target audience. This helps us create a project plan that aligns with your vision.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-3">
+                <img src="./Assets/database.png" alt="" class="w-20 h-20">
+                <div>
+                    <h1 class="font-bold aldrich">4. Testing & Quality Assurance</h1>
+                    <p class="text-base_gray text-[14px]">We conduct rigorous testing at every stage of development to
+                        identify and fix issues early, ensuring your product is bug-free and performs flawlessly.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-3">
+                <img src="./Assets/rocket 1.png" alt="" class="w-20 h-20">
+                <div>
+                    <h1 class="font-bold aldrich">5. Deployment & Launch</h1>
+                    <p class="text-base_gray text-[14px]">Once everything is tested and approved, we handle the
+                        deployment
+                        process, making sure your product is launched smoothly and efficiently across all platforms.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-3">
+                <img src="./Assets/team.png" alt="" class="w-20 h-20">
+                <div class="flex flex-row items-center">
+                    <h1 class="font-bold aldrich">Support & Maintainance</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class='text-white aldrich bg-nav'>
+        <span class="text-xl">
+            <h2 class="p-5 text-3xl ">TEXSKY</h2>
+        </span>
+        <div class="grid md:grid-cols-4 md:place-items-center">
+            <div class="about p-4 w-">
+                <h3>About Us</h3>
+                <p class="text-base_gray">we specialize in crafting high-quality web and mobile applications that drive
+                    innovation and efficiency. we're dedicated to helping your business succeed in the digital
+                    landscape.</p>
+            </div>
+            <div class="Services p-4">
+                <h3>Our Services</h3>
+                <p class="text-base_gray">Web Applications</p>
+                <p class="text-base_gray">Mobile Applications</p>
+                <p class="text-base_gray">UI/UX Designs</p>
+                <p class="text-base_gray">Digital Marketing</p>
+                <p class="text-base_gray">Desktop Applications</p>
+            </div>
+            <div class="Links p-4">
+                <h3>Links</h3>
+                <p class="text-base_gray">Home</p>
+                <p class="text-base_gray">Our Recent Projects</p>
+                <p class="text-base_gray">Technologies</p>
+                <p class="text-base_gray">Products</p>
+                <p class="text-base_gray">Other Sevices</p>
+
+            </div>
+            <div>
+                <div class="Touch p-4">
+                    <h3>Get In Touch</h3>
+                    <p class="text-base_gray">Call : +91 9494021850</p>
+                    <p class="text-base_gray">Email : textsky24@gmail.com</p>
+                </div>
+                <div class="follow mt-2 p-4">
+                    <h3>Follow Us</h3>
+                    <div class="logos flex gap-5 mt-2 ">
+                        <img src="./Assets/logos/ig.png" alt="" class="w-10 rounded-full">
+                        <img src="./Assets/logos/fb.png" alt="" class="w-10 rounded-full">
+                        <img src="./Assets/logos/x.jpg" alt="" class="w-10 rounded-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init({ duration: 1000, easing: 'ease-in-out', offset: 100 });
+    </script>
+</body>
+
+</html>
