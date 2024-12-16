@@ -44,52 +44,69 @@
         </span>
         <h1 class="aldrich text-white md:navtitle text-3xl">TEXSKY</h1>
         <div class="md:flex flex-row items-center gap-7 md:pr-10 hidden">
-            <h1 class="aldrich text-white hidden xl:block">Home</h1>
+            <a href="#Home">
+            <h1 class="aldrich text-white hidden xl:block hover:border-b-2 hover:border-gray-500">Home</h1>
+        </a>
             <a href="#about">
-                <h1 class="aldrich text-white hidden md:block">About us</h1>
+                <h1 class="aldrich text-white hidden md:block hover:border-b-2 hover:border-gray-500">About us</h1>
             </a>
-            <h1 class="aldrich text-white hidden md:block">Services</h1>
-            <h1 class="aldrich text-white hidden md:block">Technologies</h1>
-            <h1 class="aldrich text-white hidden xl:block">Products</h1>
+            <a href="#Services">
+            <h1 class="aldrich text-white hidden md:block hover:border-b-2 hover:border-gray-500">Services</h1>
+        </a>
+        <a href="/projects.html">
+            <h1 class="aldrich text-white hidden xl:block hover:border-b-2 hover:border-gray-500">Our Projects</h1>
+        </a>
+            <a href="/contacttexsky.html">
             <button
-                class="aldrich text-white border bg-nav border-white rounded-xl p-4 hover:text-black hover:bg-white transition-all hidden md:block">Get
-                Quote</button>
+                class="aldrich text-white border bg-nav border-white rounded-xl p-2 hover:text-black hover:bg-white transition-all hidden md:block">Contact Us
+                </button>
+            </a>
         </div>
     </nav>
     <div class="sidebar w-[200px] fixed top-0 z-20 bg-black h-full p-2 pl-2 flex flex-col gap-5" id="sidebar">
         <h1 class="text-right" onclick="SidebarClose()"><span
                 class="material-symbols-outlined text-white font-bold text-4xl cursor-pointer">close</span></h1>
+                <a href="/">
         <div class="flex flex-row items-center gap-2">
             <span class="material-symbols-outlined text-white text-3xl">home</span>
             <h1 class="text-base_gray text-xl">Home</h1>
+            </a>
         </div>
+        <a href="#about">
         <div class="flex flex-row items-center gap-2">
             <span class="material-symbols-outlined text-white text-3xl">info</span>
             <h1 class="text-base_gray text-xl">About us</h1>
+            </a>
         </div>
+        <a href="#Services">
         <div class="flex flex-row items-center gap-2">
             <span class="material-symbols-outlined text-white text-3xl">integration_instructions</span>
             <h1 class="text-base_gray text-xl">Services</h1>
+            </a>
         </div>
+        <a href="/projects.html">
         <div class="flex flex-row items-center gap-2">
             <span class="material-symbols-outlined text-white text-3xl">code</span>
-            <h1 class="text-base_gray text-xl">Technologies</h1>
+            <h1 class="text-base_gray text-xl">Our Projects</h1>
+            </a>
         </div>
-        <div class="flex flex-row items-center gap-2">
+        <a href="https://calendly.com/texsky24">
+            <div class="flex flex-row items-center gap-2">
             <span class="material-symbols-outlined text-white text-3xl">inventory_2</span>
-            <h1 class="text-base_gray text-xl">Products</h1>
+            <h1 class="text-base_gray text-xl">Contact Us</h1>
+            </a>
         </div>
     </div>
 
     <div class="p-10">
         <div class="md:grid flex flex-col md:grid-cols-2 place-items-center md:mt-10">
-            <div data-aos="fade-right">
+            <div data-aos="fade-right" id="Home">
                 <h1 class="aldrich text-white text-4xl md:text-6xl"><span class="text-base_blue">Custom</span>
                     Development
                     <br> and Consulting Services
                 </h1>
                 <p class="aldrich text-base_gray leading-10 mt-3" style="font-size: 20px;">At <span
-                        class="text-white">Texsky</span>, we specialize in crafting high-quality web and mobile
+                        class="text-white mb-10">Texsky</span>, we specialize in crafting high-quality web and mobile
                     applications
                     that drive innovation and efficiency. Our team of skilled developers and designers work seamlessly
                     to
@@ -115,21 +132,27 @@
                 your digital vision to life. Specializing in website development, mobile app creation, desktop software
                 solutions, and more, we harness the latest technologies to deliver outstanding results.</p>
         </div>
-        <div class="mt-10">
+        <div class="mt-10" id="Services">
+            <div class="flex gap-64">
             <h1 class="aldrich text-3xl text-white">Services We Provide</h1>
+            <a href="/contacttexsky.html">
+                <button
+                    class="aldrich text-white border border-0  border-white rounded-xl p-2 hover:text-black hover:bg-white transition-all hidden md:block">Contact Us
+                    </button>
+                </a>
+            </div>
             <div class="md:flex-row md:justify-between flex flex-col-reverse place-items-center">
-                <div class="grid lg:grid-cols-2 gap-4">
-                    <div style="width: 342px;height: 182px;" class="border border-base_gray flex p-3 gap-4"
+                <div class="grid lg:grid-cols-2 gap-4 place-items-center">
+                    <div style="width: 342px;height: 182px;" class="border border-base_gray flex p-3 gap-4 items-center"
                         data-aos="zoom-in">
                         <img src="./Assets/logos/1.png" alt="" style="width: 84px; height: 84px;">
                         <div class="flex flex-col gap-3">
                             <h1 class="aldrich text-white" style="font-size: 18px;">WEB DEVELOPMENT</h1>
                             <p class="akshar text-base_gray" style="font-size: 15px;">we specialize in creating dynamic,
                                 responsive, and visually engaging websites.</p>
-                            <button class="text-white text-right">GET QUOTE -></button>
                         </div>
                     </div>
-                    <div style="width: 342px;height: 182px;" class="border border-base_blue flex p-3 gap-4"
+                    <div style="width: 342px;height: 182px;" class="border border-base_blue flex p-3 gap-4 items-center"
                         data-aos="zoom-in">
                         <img src="./Assets/logos/2.png" alt="" style="width: 84px; height: 84px;">
                         <div class="flex flex-col gap-3">
@@ -137,29 +160,25 @@
                             <p class="akshar text-base_gray" style="font-size: 15px;">We create innovative and
                                 user-centric
                                 mobile applications for iOS, Android, and cross-platform apps.</p>
-                            <button class="text-white text-right">GET QUOTE -></button>
                         </div>
                     </div>
-                    <div style="width: 342px;height: 182px;" class="border border-base_blue flex p-3 gap-4"
+                    <div style="width: 342px;height: 182px;" class="border border-base_blue flex p-3 gap-4 items-center"
                         data-aos="zoom-in">
                         <img src="./Assets/logos/3.png" alt="" style="width: 84px; height: 84px;">
                         <div class="flex flex-col gap-3">
                             <h1 class="aldrich text-white" style="font-size: 18px;">DESKTOP APPS</h1>
                             <p class="akshar text-base_gray" style="font-size: 15px;">We develop robust, custom desktop
                                 applications for Windows, macOS, and Linux.</p>
-                            <button class="text-white text-right">GET QUOTE -></button>
                         </div>
                     </div>
-                    <div style="width: 342px;height: 182px;" class="border border-base_gray flex p-3 gap-4"
+                    <div style="width: 342px;height: 182px;" class="border border-base_gray flex p-3 gap-4 items-center"
                         data-aos="zoom-in">
                         <img src="./Assets/logos/4.png" alt="" style="width: 84px; height: 84px;">
                         <div class="flex flex-col gap-3">
                             <h1 class="aldrich text-white" style="font-size: 18px;">DIGITAL MARKETING</h1>
                             <p class="akshar text-base_gray" style="font-size: 15px;">We help businesses grow online
                                 with
-                                tailored digital marketing strategies, including SEO, social media management.</p>
-                            <button class="text-white text-right">GET QUOTE -></button>
-                        </div>
+                                tailored digital marketing strategies.</p>                       </div>
                     </div>
                 </div>
                 <div class="overflow-hidden" data-aos="fade-right">
@@ -168,45 +187,45 @@
             </div>
         </div>
     </div>
-    <div class="mt-10 bg-white w-full pt-10">
+    <div class="mt-10 bg-white w-full pt-10" id="Technologies">
         <h1 class="aldrich text-2xl text-black text-center uppercase" data-aos="zoom-in">Tehcnologies We Use</h1>
         <div class="md:flex-row md:justify-between grid lg:grid-cols-2 text-black place-items-center">
             <div class="overflow-hidden flex flex-row justify-center mt-5 md:mt-0" data-aos="zoom-out">
                 <img src="./Assets/logos/side2.png" alt="" class="w-1/2">
             </div>
             <div>
-                <div class="grid md:grid-cols-5 grid-cols-2 mt-5 md:mt-0 p-5 gap-4 aldrich text-white"
+                <div class="grid md:grid-cols-4 grid-cols-2 mt-5 md:mt-0 p-5 gap-4 aldrich text-white"
                     data-aos="zoom-in">
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/next.png" width="40px" height="40px" alt="">
                         <h2 class="text-black aldrich" style="font-size: 15px;">Next js</h2>
                     </div>
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/ang.png" alt="" width="40px" height="40px">
                         <h2 class="text-black aldrich" style="font-size: 15px;">Angular</h2>
                     </div>
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/react.png" alt="" width="40px" height="40px">
                         <h2 class="text-black aldrich" style="font-size: 15px;">React</h2>
                     </div>
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/node.png" alt="" width="40px" height="40px">
                         <h2 class="text-black aldrich" style="font-size: 15px;">Node js</h2>
                     </div>
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/express.png" alt="" width="40px" height="40px">
                         <h2 class="text-black aldrich" style="font-size: 15px;">Express</h2>
                     </div>
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/django.png" alt="" width="40px" height="40px"
                             class="rounded-full">
                         <h2 class="text-black aldrich" style="font-size: 15px;">Django</h2>
                     </div>
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/flask.png" alt="" width="40px" height="40px">
                         <h2 class="text-black aldrich" style="font-size: 15px;">Flask</h2>
                     </div>
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/flutter.png" alt="" width="40px" height="40px">
                         <h2 class="text-black aldrich" style="font-size: 15px;">Flutter</h2>
                     </div>
@@ -214,19 +233,19 @@
                         <img src="./Assets/logos/mongo.png" alt="" width="40px" height="40px">
                         <h2 class="text-black aldrich" style="font-size: 13px;">MongoDB</h2>
                     </div>
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/mysql.png" alt="" width="40px" height="40px">
                         <h2 class="text-black aldrich" style="font-size: 15px;">My Sql</h2>
                     </div>
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/react-native.png" width="40px" height="40px" alt="">
                         <h2 class="text-black aldrich" style="font-size: 15px;">R-Native</h2>
                     </div>
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/nestjs.png" alt="" width="40px" height="40px">
                         <h2 class="text-black aldrich" style="font-size: 15px;">NestJs</h2>
                     </div>
-                    <div class="border border-1 rounded-xl p-2 flex items-center gap-1">
+                    <div class="border border-1 rounded-xl p-3 flex items-center gap-1">
                         <img src="./Assets/logos/wordpress.png" alt="" width="40px" height="40px">
                         <h2 class="text-black aldrich" style="font-size: 15px;">Word press</h2>
                     </div>
@@ -243,7 +262,7 @@
     <!-- Work with us -->
     <div class="p-10">
         <div class="headings text-center aldrich text-white" data-aos="fade-up">
-            <h1 class="pb-5 pt-10 text-2xl">Work With Us</h1>
+            <h1 class="pb-5 pt-10 text-2xl"> Why Work With Us</h1>
             <p>We Create Outstanding Websites & Mobile Apps for Your New Bussiness</p>
             <p class="md:p-10 text-base_gray mt-5 mb-5 t">At TEXSKY, we specialize in creating web, mobile, and desktop
                 applications that
@@ -375,25 +394,31 @@
             </div>
             <div class="Links p-4">
                 <h3>Links</h3>
-                <p class="text-base_gray">Home</p>
-                <p class="text-base_gray">Our Recent Projects</p>
-                <p class="text-base_gray">Technologies</p>
-                <p class="text-base_gray">Products</p>
-                <p class="text-base_gray">Other Sevices</p>
+                <a href="#Home"><p class="text-base_gray">Home</p></a>
+                <a href="/projects.html"><p class="text-base_gray">Our Recent Projects</p></a>
+                <a href="#Technologies"><p class="text-base_gray">Technologies</p></a>
+                <a href="#about"><p class="text-base_gray">About Us</p></a>
+                <a href="#Services"><p class="text-base_gray">Sevices</p></a>
 
             </div>
             <div>
                 <div class="Touch p-4">
                     <h3>Get In Touch</h3>
-                    <p class="text-base_gray">Call : +91 9494021850</p>
-                    <p class="text-base_gray">Email : textsky24@gmail.com</p>
+                    <p class="text-base_gray">Call : +91 9441262299</p>
+                    <p class="text-base_gray">Email : texsky24@gmail.com</p>
                 </div>
                 <div class="follow mt-2 p-4">
                     <h3>Follow Us</h3>
                     <div class="logos flex gap-5 mt-2 ">
+                        <a href="https://www.instagram.com/texsky.in/">
                         <img src="./Assets/logos/ig.png" alt="" class="w-10 rounded-full">
+                        </a>
+                        <a href="">
                         <img src="./Assets/logos/fb.png" alt="" class="w-10 rounded-full">
+                        </a>
+                        <a href="">
                         <img src="./Assets/logos/x.jpg" alt="" class="w-10 rounded-full">
+                        </a>
                     </div>
                 </div>
             </div>
